@@ -8,7 +8,7 @@ const Intern = require("./lib/intern");
 const Manager = require("./lib/manager");
 
 async function buildATeam() {
-    let employeeTeam = [];
+    let team = [];
     let managerResponse = await prompts.managerPrompt();
     let manager = new Manager(
         managerResponse["manager_name"],
@@ -16,7 +16,7 @@ async function buildATeam() {
         managerResponse["manager_email"],
         managerResponse["manager_office"]
     );
-    employeeTeam.push(manager);
+    team.push(manager);
 
     let employeeReponse;
     let employee;
@@ -42,21 +42,18 @@ async function buildATeam() {
             );
         }
 
-        employeeTeam.push(employee);
+        team.push(employee);
         addEmployees = await prompts.continuePrompt();
         addEmployees = addEmployees["addAnother"];
     }
 
     fs.writeFileSync(path.resolve("./dist/index.html"), "");
-    createHTML(employeeTeam);
+    createHTML(team);
 }
 
 function initTest() {
     console.log(process.cwd());
-    fs.copyFileSync(
-        path.resolve("./src/index_source.html"),
-        path.resolve("./dist/index.html")
-    );
+    fs.copyFileSync(path.resolve("./dist/index.html"));
 }
 
 initTest();
