@@ -1,26 +1,27 @@
 {
-  "name": "WK10-Homework",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "tests"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://gitbhub.com/Xckz/TeamProfileGenerator.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bootstrap-icons": "^1.5.0",
-    "inquirer": "^8.2.0",
-    "post": "0.0.1"
-  },
-  "devDependencies": {}
+    "name": "WK10-Homework",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib",
+        "test": "tests"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://gitbhub.com/Xckz/TeamProfileGenerator.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bootstrap-icons": "^1.5.0",
+        "inquirer": "^8.2.0",
+        "path": "^0.12.7",
+        "post": "0.0.1"
+    },
+    "devDependencies": {}
 }

@@ -48,7 +48,7 @@ async function buildATeam() {
     }
 
     fs.writeFileSync(path.resolve("./dist/index.html"), "");
-    buildHTML(employeeTeam);
+    createHTML(employeeTeam);
 }
 
 function initTest() {
@@ -59,4 +59,4 @@ function initTest() {
     );
 }
 
-init();
+initTest();
