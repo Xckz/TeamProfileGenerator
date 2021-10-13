@@ -1,0 +1,73 @@
+a {
+    color: rgb(8, 175, 204);
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    background-color: bisque;
+    height: 100%;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.employee-card {
+    border-radius: 10px;
+    margin: 3px;
+    min-width: 500px;
+}
+
+.card-top {
+    background-color: rgb(29, 126, 182);
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+    color: rgb(0, 0, 0);
+    padding: 2px;
+
+    text-align: center;
+}
+
+.card-top h1 {
+    font-size: 32px;
+}
+
+.card-top h2 {
+    font-size: 24px;
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(190, 190, 190);
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    padding: 1em;
+    border-radius: 5px;
+    padding: 1vh;
+    margin: 0;
+}
+
+.main-header {
+    background-color: rgb(235, 95, 95);
+    color: white;
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    padding: 20px;
+}
